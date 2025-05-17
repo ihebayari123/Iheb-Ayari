@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsDialog</class>
+ <widget class="QDialog" name="SettingsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1058</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Paramètres</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::pane {
+    background-color: rgb(255, 255, 255); /* Fond blanc */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+QTabBar::tab {
+    background: rgb(200, 200, 200); /* Couleur de fond des onglets */
+    border: 1px solid #aaa;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+QTabBar::tab:selected {
+    background: #3498db;  /* Couleur de fond quand l'onglet est sélectionné */
+    color: white;
+    font-weight: bold;
+}
+
+QTabBar::tab:hover {
+    background: #2980b9; /* Couleur de fond quand l'onglet est survolé */
+    color: white;
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px;
+}
+QPushButton {
+    background-color: #0078d4;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+QPushButton:hover {
+    background-color: #005a9e;
+}
+
+QPushButton:pressed {
+    background-color: #003d6a;
+}
+QWidget {
+    
+    color:  rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Apparence</string>
+      </attribute>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1031</width>
+         <height>471</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>951</width>
+         <height>451</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Style pour le QGroupBox */
+QGroupBox {
+    background-color: #f9f9f9;
+    border: 2px solid #0078d4;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Titre du QGroupBox */
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0078d4;
+}
+
+/* Labels à l'intérieur du QGroupBox */
+QGroupBox QLabel {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Textes d'entrées à l'intérieur du QGroupBox */
+QGroupBox QLineEdit,
+QGroupBox QDateEdit, 
+QGroupBox QTimeEdit {
+    background-color: #f5f5f5;
+	color: black;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Focus sur QLineEdit, QDateEdit, QTimeEdit */
+QGroupBox QLineEdit:focus, 
+QGroupBox QDateEdit:focus, 
+QGroupBox QTimeEdit:focus {
+    border-color: #0078d4;
+    background-color: #e6f0ff;
+}
+
+/* Placeholders dans les champs de texte */
+QGroupBox QLineEdit::placeholder, 
+QGroupBox QDateEdit::placeholder, 
+QGroupBox QTimeEdit::placeholder {
+    color: black; /* Définit la couleur des placeholders à noir */
+    font-style: italic;
+}
+
+/* Boutons radio dans le QGroupBox */
+QGroupBox QRadioButton {
+    color: black;
+    font-size: 20px;
+}
+
+QGroupBox QRadioButton::indicator {
+    width: 30px;
+    height: 30px;
+    border: 5px solid #0078d4;
+    background-color: #e6e6e6;  /* Arrière-plan gris clair */
+    border-radius: 50%;
+}
+
+QGroupBox QRadioButton::indicator:checked {
+    background-color: #0078d4;
+    border: 2px solid #0078d4;
+}
+
+QGroupBox QRadioButton::indicator:unchecked {
+    background-color: #e6e6e6;
+    border: 2px solid #ccc;
+}
+
+/* Boutons dans le QGroupBox */
+QGroupBox QPushButton {
+    background-color: #0078d4;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+QGroupBox QPushButton:hover {
+    background-color: #005a9e;
+}
+
+QGroupBox QPushButton:pressed {
+    background-color: #003d6a;
+}
+
+/* Progress Bar dans le QGroupBox */
+QGroupBox QProgressBar {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+QGroupBox QProgressBar::chunk {
+    background-color: #0078d4;
+    border-radius: 5px;
+}
+</string>
+       </property>
+       <property name="title">
+        <string>Apparence</string>
+       </property>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>100</y>
+          <width>131</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/img/images/brightnes.png);
+background-color: transparent;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButtonClair">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>230</y>
+          <width>161</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: transparent;</string>
+        </property>
+        <property name="text">
+         <string>Clair</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButtonSombre">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>220</y>
+          <width>181</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: transparent;</string>
+        </property>
+        <property name="text">
+         <string>Sombre</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>100</y>
+          <width>181</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/img/images/moon.png);
+background-color: transparent;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Securités</string>
+      </attribute>
+      <widget class="QGroupBox" name="verificationGroup">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>601</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Style pour le QGroupBox */
+QGroupBox {
+    background-color: #f9f9f9;
+    border: 2px solid #0078d4;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Titre du QGroupBox */
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0078d4;
+}
+
+/* Labels à l'intérieur du QGroupBox */
+QGroupBox QLabel {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Textes d'entrées à l'intérieur du QGroupBox */
+QGroupBox QLineEdit,
+QGroupBox QDateEdit, 
+QGroupBox QTimeEdit {
+    background-color: #f5f5f5;
+	color: black;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Focus sur QLineEdit, QDateEdit, QTimeEdit */
+QGroupBox QLineEdit:focus, 
+QGroupBox QDateEdit:focus, 
+QGroupBox QTimeEdit:focus {
+    border-color: #0078d4;
+    background-color: #e6f0ff;
+}
+
+/* Placeholders dans les champs de texte */
+QGroupBox QLineEdit::placeholder, 
+QGroupBox QDateEdit::placeholder, 
+QGroupBox QTimeEdit::placeholder {
+    color: black; /* Définit la couleur des placeholders à noir */
+    font-style: italic;
+}
+
+/* Boutons radio dans le QGroupBox */
+QGroupBox QRadioButton {
+    color: black;
+    font-size: 14px;
+}
+
+QGroupBox QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #0078d4;
+    background-color: #e6e6e6;  /* Arrière-plan gris clair */
+    border-radius: 50%;
+}
+
+QGroupBox QRadioButton::indicator:checked {
+    background-color: #0078d4;
+    border: 2px solid #0078d4;
+}
+
+QGroupBox QRadioButton::indicator:unchecked {
+    background-color: #e6e6e6;
+    border: 2px solid #ccc;
+}
+
+/* Boutons dans le QGroupBox */
+QGroupBox QPushButton {
+    background-color: #0078d4;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+QGroupBox QPushButton:hover {
+    background-color: #005a9e;
+}
+
+QGroupBox QPushButton:pressed {
+    background-color: #003d6a;
+}
+
+/* Progress Bar dans le QGroupBox */
+QGroupBox QProgressBar {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+QGroupBox QProgressBar::chunk {
+    background-color: #0078d4;
+    border-radius: 5px;
+}
+</string>
+       </property>
+       <property name="title">
+        <string>Vérification par SMS</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_verif">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: transparent;
+</string>
+          </property>
+          <property name="text">
+           <string>Numéro de téléphone:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="phoneNumberEdit">
+          <property name="placeholderText">
+           <string>+21612345678</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="sendCodeButton">
+          <property name="text">
+           <string>Envoyer le code de vérification</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: transparent;
+</string>
+          </property>
+          <property name="text">
+           <string>Code de vérification:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="verificationCodeEdit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="placeholderText">
+           <string>Entrez le code reçu par SMS</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="verifyButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Vérifier</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="timerLabel">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: transparent;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="resendButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Renvoyer le code</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>110</y>
+         <width>261</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/img/images/11220734.png);
+background-color: transparent;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>-8</x>
+         <y>0</y>
+         <width>1031</width>
+         <height>471</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_4</zorder>
+      <zorder>verificationGroup</zorder>
+      <zorder>label_3</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string> A propos</string>
+      </attribute>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>-70</y>
+         <width>271</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/img/images/Black_and_White_Blue_Modern_Letter_W_Logo-removebg-preview.png);
+    background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>360</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>visiter notre website</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>110</y>
+         <width>431</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/img/images/StartWise (1).png);
+    background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1021</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="WidgetContents" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>571</width>
+         <height>451</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget {
+    border: 2px solid white;
+    border-radius: 15px; /* Optional: matches the QLabel style */
+}
+
+QLabel {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                  stop:0 #0f2027, stop:1 #0049ac); /* Deep blue gradient */
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+QLabel a {
+    color: #82d0f8; /* Light blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+QLabel a:hover {
+    color: #c0eaff; /* Even lighter blue on hover */
+    text-decoration: underline;
+}
+
+QLabel h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+QLabel strong {
+    color: #c0eaff; /* Soft sky blue for emphasis */
+    font-weight: 600;
+}
+background-color: transparent;</string>
+       </property>
+      </widget>
+      <zorder>label_2</zorder>
+      <zorder>label</zorder>
+      <zorder>pushButton</zorder>
+      <zorder>label_5</zorder>
+      <zorder>WidgetContents</zorder>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QDialog" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1013</width>
+    <height>563</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Fenêtre principale */
+QDialog {
+	
+	background-image: url(:/img/images/104016.jpg);
+
+    background-color: #2c3e50; /* Bleu foncé */
+    color: #ecf0f1; /* Blanc cassé */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Champs de saisie (QLineEdit) */
+QLineEdit {
+    background-color: #34495e; /* Bleu-gris */
+    color: #ecf0f1; /* Blanc cassé */
+    border: 2px solid rgb(0, 74, 173); /* Bleu */
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgb(0, 74, 173); /* Bleu */
+    background-color: #3b5998; /* Bleu plus clair */
+}
+
+/* Bouton de connexion (QPushButton) */
+QPushButton {
+    background-color: rgb(0, 74, 173); /* Bleu */
+    color: #ecf0f1; /* Blanc cassé */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #004a9d; /* Bleu légèrement plus foncé */
+}
+
+QPushButton:pressed {
+    background-color: #003a7d; /* Bleu encore plus foncé */
+}
+
+/* Labels (QLabel) */
+QLabel {
+    color: #ecf0f1; /* Blanc cassé */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Placeholder text dans QLineEdit */
+QLineEdit[placeholderText] {
+    color: #95a5a6; /* Gris clair */
+}
+
+/* MessageBox */
+QMessageBox {
+    background-color: #34495e; /* Bleu-gris */
+    color: #ecf0f1; /* Blanc cassé */
+    border-radius: 10px;
+}
+
+</string>
+  </property>
+  <widget class="QLineEdit" name="email">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>250</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>email</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="mdp">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>320</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>mot de passe</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sign_in">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>380</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sign in</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>-30</y>
+     <width>541</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/new/image/icons/Black_and_White_Blue_Modern_Letter_W_Logo-removebg-preview.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>461</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/img/images/startup-construction-development-3d-thin-line-art-style-design-concept-isometric-illustration.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnFacialRecognition">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>450</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reconnaissance _faciale</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelCameraPreview">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>491</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMessage">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>510</y>
+     <width>321</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>email</zorder>
+  <zorder>mdp</zorder>
+  <zorder>sign_in</zorder>
+  <zorder>label_2</zorder>
+  <zorder>btnFacialRecognition</zorder>
+  <zorder>labelCameraPreview</zorder>
+  <zorder>labelMessage</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

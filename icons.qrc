@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>images/add.png</file>
+        <file>images/Black_and_White_Blue_Modern_Letter_W_Logo-removebg-preview.png</file>
+        <file>images/customer.png</file>
+        <file>images/dashboard.png</file>
+        <file>images/delete.png</file>
+        <file>images/email.png</file>
+        <file>images/interview.png</file>
+        <file>images/logout.png</file>
+        <file>images/modify.png</file>
+        <file>images/notification.png</file>
+        <file>images/objet.png</file>
+        <file>images/project.png</file>
+        <file>images/ressources.png</file>
+        <file>images/search-interface-symbol.png</file>
+        <file>images/settings.png</file>
+        <file>images/bottom-right_10024180.png</file>
+        <file>images/femme.png</file>
+        <file>images/homme.png</file>
+        <file>images/united-kingdom.png</file>
+        <file>images/france.png</file>
+        <file>images/pc.png</file>
+        <file>images/confirmer.png</file>
+        <file>images/reset.png</file>
+        <file>images/clear.png</file>
+        <file>images/clear1.png</file>
+        <file>images/StartWise (1).png</file>
+        <file>images/11220734.png</file>
+        <file>images/smile.png</file>
+        <file>images/angry.png</file>
+        <file>images/moon.png</file>
+        <file>images/brightnes.png</file>
+        <file>images/bg.png</file>
+        <file>images/user_7175415.png</file>
+        <file>images/mail_1324171.png</file>
+        <file>images/password_1161477.png</file>
+        <file>images/aerial-view-business-team.jpg</file>
+        <file>images/124515.jpg</file>
+        <file>images/104016.jpg</file>
+        <file>images/11668721_20945301.jpg</file>
+        <file>images/startup-construction-development-3d-thin-line-art-style-design-concept-isometric-illustration.png</file>
+        <file>icons/raccrocher-lappel.png</file>
+        <file>icons/telephone.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

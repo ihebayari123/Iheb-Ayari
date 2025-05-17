@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>resours.qrc/icon/1.png</file>
+        <file>resours.qrc/icon/2.png</file>
+        <file>resours.qrc/icon/3.png</file>
+        <file>resours.qrc/icon/4.png</file>
+        <file>resours.qrc/icon/5.png</file>
+        <file>resours.qrc/icon/6.png</file>
+        <file>resours.qrc/icon/7.png</file>
+        <file>resours.qrc/icon/8.png</file>
+        <file>resours.qrc/icon/9.png</file>
+        <file>resours.qrc/icon/10.png</file>
+        <file>resours.qrc/icon/11.jpeg</file>
+        <file>resours.qrc/icon/email.png</file>
+        <file>resours.qrc/icon/images.png</file>
+        <file>resours.qrc/icon/interview.png</file>
+        <file>resours.qrc/icon/logout.png</file>
+        <file>resours.qrc/icon/notification.png</file>
+        <file>resours.qrc/icon/pngegg.png</file>
+        <file>resours.qrc/icon/preview.png</file>
+        <file>resours.qrc/icon/project.png</file>
+        <file>resours.qrc/icon/search-interface-symbol.png</file>
+        <file>resours.qrc/icon/settings.png</file>
+    </qresource>
+</RCC>

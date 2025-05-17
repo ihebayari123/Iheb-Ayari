@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/new/image">
+        <file>icons/anonyme.png</file>
+        <file>icons/ascending-sort.png</file>
+        <file>icons/Black_and_White_Blue_Modern_Letter_W_Logo-removebg-preview.png</file>
+        <file>icons/bouton-supprimer.png</file>
+        <file>icons/client.png</file>
+        <file>icons/client2-removebg-preview.png</file>
+        <file>icons/customer.png</file>
+        <file>icons/dashboard.png</file>
+        <file>icons/email.png</file>
+        <file>icons/gens-d-affaires-d-blancs-avec-le-graphique-de-statistique-49936928.png</file>
+        <file>icons/interview.png</file>
+        <file>icons/logiciel.png</file>
+        <file>icons/logout.png</file>
+        <file>icons/map.qml</file>
+        <file>icons/Marker.qml</file>
+        <file>icons/minimal_map.png</file>
+        <file>icons/notification.png</file>
+        <file>icons/pdf.png</file>
+        <file>icons/project.png</file>
+        <file>icons/project-icon-png-8.jpg</file>
+        <file>icons/project-management.png</file>
+        <file>icons/search-interface-symbol.png</file>
+        <file>icons/settings.png</file>
+        <file>icons/sort.png</file>
+        <file>icons/statistics-flat-icon-vector-7303835.jpg</file>
+        <file>icons/stylo.png</file>
+        <file>icons/bouton-jouer.png</file>
+    </qresource>
+    <qresource prefix="/new/images"/>
+</RCC>
